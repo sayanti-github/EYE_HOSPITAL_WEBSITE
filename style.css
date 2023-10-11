@@ -69,6 +69,10 @@ footer{
 	background-size: cover;
 	padding: 40px 0 69px;
 }
+.logo_wrap img{
+	max-width: 77%;
+    text-align: right;
+}
 .key-features .kvxol {
     padding: 0px;
 }
@@ -81,6 +85,10 @@ footer{
     background-color: #03509e;
     color: #FFF;
     margin-bottom: 0px;
+}
+a {
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: none!important;
 }
 .key-features .single-key i {
     background-color: #FFF;
@@ -118,13 +126,32 @@ footer{
     box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
     padding: 10px;
     border-radius: 10px;
+	background: #fff8c5;
+	height: 190px;
 	/* display: flex; */
 }
 .doctors .member .member-info h4 {
     font-weight: 700;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     font-size: 18px;
     color: #555555;
+}
+.doctors .member .member-info span {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #737373;
+	font-family: 'Balsamiq Sans', cursive;
+
+}
+.doctors .member:hover{
+	box-shadow: 1px 1px 20px #0000001f;
+	margin-top: -20px;
+	transition:.5s;
+} 
+.doctors .member:hover .doctors .member span{
+	display: block;
+	/* transition: .5s; */
 }
 .doctors .member .pic {
 	overflow: hidden;
@@ -179,7 +206,10 @@ footer{
 	position: relative;
 	transition: 0.5s;
   }
-  
+.nav.nav-tabs .flex-column{
+	overflow: auto;
+	height: 209px;
+  }  
 .ft-btn span:after {
 	content: '\00bb';
 	position: absolute;
@@ -519,7 +549,9 @@ a {
 	left:100%;
 	visibility:visible;	
 }
-
+#navigation ul{
+	margin-bottom: 0;
+}
 .get-admition {
     float: right;
     font-size: 14px;
@@ -741,9 +773,26 @@ a {
 	text-decoration: none;
 
 }
-
+.widget-contact ul li a {
+    color: #f9f9f9;
+    font-size: 14px;
+}
+footer .widget h5 {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0px 0 30px;
+    font-size: 18px;
+}
+.widget-contact ul li {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    color: #f9f9f9;
+    font-size: 14px;
+}
 .nav_2 ul li a:hover{
 	color: #fff;
+	background-color:#ffcd01!important;
 }
 .sidepanel  {
 	width: 0;
@@ -755,7 +804,7 @@ a {
 	background-color: #041e47;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 17px;
 	display: none;
   }
   
@@ -785,16 +834,17 @@ a {
   }
   
   .openbtn {
-	font-size: 24px;
+    font-size: 24px;
     cursor: pointer;
     background-color: #edb800;
     color: white;
-    padding: 10px 15px;
+    padding: 9px 13px;
     border: none;
     position: absolute;
-    bottom: 25px;
-    right: 21px;
+    bottom: 53px;
+    left: 12px;
     display: none;
+    border-radius: 5px;
   }
   
   .openbtn:hover {
@@ -1421,10 +1471,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .kf_edu2_heading2 p{
 	margin:10px 0px;
 	font-size:14px;
+	text-align: center;
 }
 #departments .nav-link.active {
-    background: #f7fcfc;
-    border-color: #3fbbc0;
+    /* background: #f7fcfc;
+    border-color: #3fbbc0; */
+	background: #fff5c9;
+    border-color: #00539b;
 }
 #departments .nav-link {
     border: 0;
@@ -1439,7 +1492,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-color: 3px solid blue;
 }
 #departments .nav-link:hover h4 {
-    color: #3fbbc0;
+    color: #00539b;;
 }
 #departments .nav-link p {
     font-size: 14px;
@@ -2966,7 +3019,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     float: left!important;
     background: #fdd001;
     /* color: black; */
-    padding: 0px 12px;
+    padding: 4px 12px;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
     color: #00539b;
@@ -3567,7 +3620,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #3fbbc0;
+  background: #00539b;
   top: 0;
   border-radius: 0px;
 }
@@ -3575,7 +3628,9 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 .featured-services .icon {
   margin-bottom: 10px;
 }
-
+#normal{
+	display: none;
+}
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
@@ -3793,8 +3848,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   -webkit-filter: grayscale(0%);
 }
 .about .video-box {
-    background: url(./extra-images/abt-thumb.jpg) center center no-repeat;
-    background-size: cover;
+    background: url(./extra-images/abt-thumb2.jpg) center center no-repeat;
+    /* background-size: cover; */
     min-height: 500px;
 }
 .about .icon-box .icon {
@@ -4351,7 +4406,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	width:100%;
 	margin-bottom: -6px;
 	text-align: left;
-    padding: 10px 18px;
+    padding: 12px 12px;
     background: white;
 	border-radius: 10px;
 }
@@ -5356,6 +5411,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     border-bottom: 1px solid #e7e7e7;
     padding-bottom: 0px;
     margin-bottom: 30px;
+	padding: 0 10px;
 }
 .course_heading{
 	float: left;
@@ -6963,9 +7019,15 @@ h1, h2, h3, h4, h5, h6
     
 }
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 769px)
 {
-    
+   #normal{
+	display: block;
+	margin-top: 20px;
+   } 
+   #doctors{
+	display: none;
+   }
     .input_field
     {
         margin-bottom: 30px;
@@ -6989,7 +7051,8 @@ h1, h2, h3, h4, h5, h6
 		max-width: 12% !important;
 		margin-bottom: 12px !important;
 	}
-
+	.logo_wrap img {
+		max-width: 109px;}
     .filterable-item.col-md-3 {
     width: 100% !important;
 }
@@ -6997,6 +7060,22 @@ h1, h2, h3, h4, h5, h6
     width: 100% !important;
 
 }
+#mySidepanel {
+    display: block!important;
+}
+.tl-1-about-sticker {
+	display: none;
+}
+.tab-content>.tab-pane {
+    display: block;
+	margin-top: 10px;
+}
+.about .icon-boxes h3 {
+    font-size: 18px;}
+.about .icon-box .icon {display: none;}	
+.about .icon-box .description {margin-left: 0;}
+.about .icon-box .title {margin-left: 0;}
+
 }
 
 @media only screen and (max-width: 575px)

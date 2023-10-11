@@ -4,13 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Education</title>
+	<link href="images/logo_32X26.png" rel="icon">
+	<title>Lions Eye Hospital</title>
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	<!-- Full Calender CSS -->
 	<link href="css/fullcalendar.css" rel="stylesheet">
 	<!-- Owl Carousel CSS -->
 	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	<!-- Pretty Photo CSS -->
 	<link href="css/prettyPhoto.css" rel="stylesheet">
 	<!-- Bx-Slider StyleSheet CSS -->
@@ -35,6 +38,12 @@
 	<link href="css/selectric.css" rel="stylesheet">
 	<!-- SIDE MENU -->
 	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+	<style>
+	.nav-tabs>li {
+    float: none;
+    /* margin-bottom: -1px; */
+}
+	</style>
 </head>
 
 <body>
@@ -46,7 +55,7 @@
 				<div class="row">
 					<div class="col-md-5">
 						<div class="pull-left">
-							<a href=""><em class="contct_2"><i class="fa fa-phone"></i> Call Us For Enquiry</em></a>
+							<a href="tel:8768296758"><em class="contct_2"><i class="fa fa-phone"></i> Call Us For Enquiry</em></a>
 						</div>
 					</div>
 					<div class="col-md-7">
@@ -71,11 +80,11 @@
 					<div class="col-md-2">
 						<div class="logo_wrap">
 							<a href="index.html"><img src="images\lions_club_logo.png" alt=""
-									style="max-width: 77%; text-align:right;" /></a>
+									 /></a>
 						</div>
 	
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-7">
 						<!-- <h1>
 					    Haldia Lions Model School
 						</h1> -->
@@ -90,10 +99,11 @@
 							Haldia, West Bengal 721602
 						</p>
 					</div>
-					<div class="col-md-2" style="text-align:right;">
-						<div class="logo_wrap">
-							<a href="index.html"><img src="images\lions_club_logo.png" alt=""
-									style="max-width: 77%; text-align:right;" /></a>
+					<div class="col-md-3" style="text-align:right;">
+						<div class="logo_wrap2">
+							<button class="ft-btn">
+								<a href="tel:8768296758" target="_blank" style=" font-weight: 700;font-size: 17px;color: #041e47;font-family: arial;"><i class="fa fa-calendar-check-o" style="    margin-right: 2px;font-weight: 700;" aria-hidden="true"></i><span>Take An Appoinment</span></a>
+							  </button>
 						</div>
 						
 					</div>
@@ -201,15 +211,16 @@
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
         <div class="container" data-aos="fade-up">
-            <div class="kf_edu2_heading2">
+            <div class="kf_edu2_heading2 wow fadeInUp">
                 <h3>Our Services</h3>
                 <p>
                     Lions Eye hospitals play a crucial role in promoting eye health, preventing vision-related issues, and providing advanced medical care for various eye conditions
                 </p>
             </div>
           <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <ul class="nav nav-tabs flex-column">
+            <div class="col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
+              <ul class="nav nav-tabs flex-column" style="    overflow: auto;
+			  height: 200px;">
                 <li class="nav-item">
                   <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
                     <h4>Eye Examinations</h4>
@@ -228,47 +239,91 @@
                     <!-- <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p> -->
                   </a>
                 </li>
-                <!-- <li class="nav-item mt-2">
-                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                    <h4>Retinal Care</h4>
-                    <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
-                  </a>
-                </li> -->
                 <li class="nav-item mt-2">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
                       <h4>Corneal Services</h4>
                       <!-- <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p> -->
                     </a>
                   </li>
+				  <li class="nav-item mt-2">
+					<a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+					  <h4>Retinal Care service</h4>
+					  <!-- <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p> -->
+					</a>
+				  </li> 
+				  <li class="nav-item mt-2">
+					<a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+					  <h4>Glaucoma Management</h4>
+					  <!-- <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p> -->
+					</a>
+				  </li>
+				  <li class="nav-item mt-2">
+					<a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
+					  <h4>Pediatric Ophthalmology</h4>
+					  <!-- <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p> -->
+					</a>
+				  </li>
+				  <li class="nav-item mt-2">
+					<a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-8">
+					  <h4>Oculoplastic and Orbital Surgery</h4>
+					  <!-- <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p> -->
+					</a>
+				  </li>
+				  <li class="nav-item mt-2">
+					<a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-9">
+					  <h4>Contact Lens Services</h4>
+					  <!-- <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p> -->
+					</a>
+				  </li>    
               </ul>
             </div>
             <div class="col-lg-8">
-              <div class="tab-content">
+              <div class="tab-content wow fadeInUp">
                 <div class="tab-pane active show" id="tab-1">
                   <h3>Eye Examinations</h3>
-                  <img src="images/departments-1.jpg" alt="" class="img-fluid">
+                  <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
                   <p>Eye hospitals offer comprehensive eye examinations to assess vision and detect eye problems. These exams include visual acuity tests, refraction tests, and assessments for common eye conditions like glaucoma, cataracts, and macular degeneration.</p>
                 </div>
                 <div class="tab-pane" id="tab-2">
                   <h3>Cataract Surgery</h3>
-                  <img src="images/departments-1.jpg" alt="" class="img-fluid">
+                  <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
                   <p>Cataract surgery is a common procedure performed in eye hospitals to remove clouded lenses and restore clear vision. Advanced techniques, such as phacoemulsification, are often used for this purpose</p>
                 </div>
                 <div class="tab-pane" id="tab-3">
                   <h3>Refractive Surgery</h3>
-                  <img src="images/departments-1.jpg" alt="" class="img-fluid">
+                  <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
                   <p>Eye hospitals provide refractive surgery options, such as LASIK (Laser-Assisted In Situ Keratomileusis), PRK (Photorefractive Keratectomy), and implantable lenses, to correct vision problems like nearsightedness, farsightedness, and astigmatism.</p>
                 </div>
                 <div class="tab-pane" id="tab-4">
-                  <h3>Retinal Care</h3>
-                  <img src="images/departments-1.jpg" alt="" class="img-fluid">
+                  <h3>Retinal Care Service</h3>
+                  <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
                   <p>Retinal conditions like diabetic retinopathy, retinal detachment, and age-related macular degeneration are diagnosed and treated in specialized retinal clinics within eye hospitals. Treatments may include laser therapy, intravitreal injections, or surgery.</p>
                 </div>
                 <div class="tab-pane" id="tab-5">
                     <h3>Corneal Services</h3>
-                    <img src="images/departments-1.jpg" alt="" class="img-fluid">
+                    <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
                     <p>Eye hospitals offer corneal transplantation and treatment for conditions affecting the cornea, such as keratoconus, corneal ulcers, and dystrophies.</p>
                   </div>
+				  <div class="tab-pane" id="tab-6">
+                    <h3>Glaucoma Management</h3>
+                    <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
+                    <p>Patients with glaucoma receive specialized care to manage intraocular pressure and prevent vision loss. This includes medications, laser therapy, and surgical options like trabeculectomy.</p>
+                  </div>
+				  <div class="tab-pane" id="tab-7">
+                    <h3>Pediatric Ophthalmology</h3>
+                    <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
+                    <p>Eye hospitals have pediatric ophthalmologists who specialize in diagnosing and treating eye issues in children, including lazy eye (amblyopia), strabismus (crossed eyes), and refractive errors.</p>
+                  </div>
+				  <div class="tab-pane" id="tab-8">
+                    <h3>Oculoplastic and Orbital Surgery</h3>
+                    <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
+                    <p>Eye hospitals have pediatric ophthalmologists who specialize in diagnosing and treating eye issues in children, including lazy eye (amblyopia), strabismus (crossed eyes), and refractive errors.</p>
+                  </div>
+				  <div class="tab-pane" id="tab-9">
+                    <h3>Contact Lens Services</h3>
+                    <!-- <img src="images/departments-1.jpg" alt="" class="img-fluid"> -->
+                    <p>Patients interested in contact lenses can receive fitting, prescription, and guidance on proper lens care and maintenance.</p>
+                  </div>     	  
               </div>
             </div>
           </div>
@@ -276,7 +331,7 @@
         </div>
       </section><!-- End Departments Section -->
 		<div class="kf_content_wrap">
-			<footer>
+			<footer class="wow fadeInUp">
 				<!--EDU2 FOOTER CONTANT WRAP START-->
 				<div class="container">
 					<div class="row">
@@ -287,9 +342,9 @@
 								<p class="text-justify" style="color:white; padding-right: 57px;">The Lions Eye Hospital was founded on October 2, 1980, through the dedicated efforts and initiative of the members of the Lions Club in Haldia. It was originally located near the old State Bank in the CPT Market area of Haldia.</p>
 							 
 							</div>
-							<button class="ft-btn">
+							<!-- <button class="ft-btn">
 							  <a href="https://www.facebook.com/people/Mother-Teresa-Lions-School/100054322129728/?paipv=0&amp;eav=AfZsQC3dIDDpcq797KcAjTyr9bmLfqt6UC2pium5RdbgoH59imfDM1dnaPF1bBmbFtE&amp;_rdr" target="_blank" style=" font-weight: 700;font-size: 17px;color: #041e47;font-family: arial;"><span>facebook</span></a>
-							</button>	
+							</button>	 -->
 							
 						</div>
 						<!--EDU2 FOOTER CONTANT DES END-->
@@ -314,12 +369,12 @@
 							<div class="widget widget-contact">
 								<h5>Contact</h5>
 								<ul>
-									<li><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 18px;"></i><p style="display: inline;padding-left: 10px;">444G+9CC, Purba Srikrishnapur, Haldia - Tamluk - Mechada Rd. Haldia, West Bengal 721602</p>
+									<li><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 18px;"></i><p style="display: inline;padding-left: 10px;">Purba Srikrishnapur, Haldia - Tamluk - Mechada Rd. Haldia, West Bengal 721602</p>
 									</li>
 									<li>
-										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel:8768296758"> 8768296758 (Reception Number)</a>
+										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel:8768296758"> +918768296758 (Reception Number)</a>
 										<br>
-										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel:8967852411">8967852411 (Medical Shop)</a>
+										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel:8967852411">+918967852411 (Medical Shop)</a>
 									</li>
 								
 									<li><i class="fa fa-envelope-o" style="font-size: 18px;padding-right: 10px;"></i><a href="mailto:haldialions@gmail.com">haldialions@gmail.com</a></li>
@@ -328,7 +383,7 @@
 							<div class="widget widget-contact" style="padding-top: 16px;">
 								<b style="padding-top:10px;color:white;">Hospital Hours</b>
 								<ul>
-									<li><i class="fa fa-clock-o" aria-hidden="true" style="font-size: 21px;padding-right: 11px;"></i>Monday-Sunday (9AM-4:30PM)</li>
+									<li><i class="fa fa-clock-o" aria-hidden="true" style="font-size: 21px;padding-right: 11px;"></i>All days in a week  (9AM-4:30PM)</li>
 								</ul>
 		
 							</div>
@@ -399,7 +454,24 @@
 	<script src="js/jquery.sidr.min.js"></script>
 	<!--Custom JavaScript-->
 	<script src="js/custom.js"></script>
-
+	<script src="js/wow.min.js"></script>
+	<script>
+		wow = new WOW(
+		  {
+			animateClass: 'animated',
+			offset:       100,
+			callback:     function(box) {
+			  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+			}
+		  }
+		);
+		wow.init();
+		document.getElementById('moar').onclick = function() {
+		  var section = document.createElement('section');
+		  section.className = 'section--purple wow fadeInDown';
+		  this.parentNode.insertBefore(section, this);
+		};
+	  </script>
     
 </body>
 </html>
